@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ozcanmirzanli/packmate-travel-list/static/css/main.4bae4cef.css",
+    "main.js": "/ozcanmirzanli/packmate-travel-list/static/js/main.0b6eaf1a.js",
+    "index.html": "/ozcanmirzanli/packmate-travel-list/index.html",
+    "main.4bae4cef.css.map": "/ozcanmirzanli/packmate-travel-list/static/css/main.4bae4cef.css.map",
+    "main.0b6eaf1a.js.map": "/ozcanmirzanli/packmate-travel-list/static/js/main.0b6eaf1a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4bae4cef.css",
+    "static/js/main.0b6eaf1a.js"
+  ]
+}
