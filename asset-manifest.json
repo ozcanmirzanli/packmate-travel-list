@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/packmate-travel-list/static/css/main.4bae4cef.css",
-    "main.js": "/packmate-travel-list/static/js/main.0b6eaf1a.js",
+    "main.js": "/packmate-travel-list/static/js/main.bd3b1929.js",
     "index.html": "/packmate-travel-list/index.html",
     "main.4bae4cef.css.map": "/packmate-travel-list/static/css/main.4bae4cef.css.map",
-    "main.0b6eaf1a.js.map": "/packmate-travel-list/static/js/main.0b6eaf1a.js.map"
+    "main.bd3b1929.js.map": "/packmate-travel-list/static/js/main.bd3b1929.js.map"
   },
   "entrypoints": [
     "static/css/main.4bae4cef.css",
-    "static/js/main.0b6eaf1a.js"
+    "static/js/main.bd3b1929.js"
   ]
 }
