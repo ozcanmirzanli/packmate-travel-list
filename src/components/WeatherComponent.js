@@ -22,7 +22,11 @@ function WeatherComponent() {
 
   function getClothingSuggestions(weatherData) {
     const weatherDescription = weatherData.weather[0].main.toLowerCase();
-    if (weatherDescription.includes("rain")) {
+    const temperature = Math.floor(weatherData.main.temp);
+
+    if (temperature <= 0) {
+      return "It's freezing outside! Dress very warmly.";
+    } else if (weatherDescription.includes("rain")) {
       return "Don't forget to bring an umbrella and wear a rain jacket.";
     } else if (weatherDescription.includes("snow")) {
       return "Dress warmly and wear boots.";
@@ -34,12 +38,14 @@ function WeatherComponent() {
   }
 
   function getWeatherEmoji(weatherDescription) {
-    if (weatherDescription.includes("rain")) {
+    if (weatherDescription.includes("Rain")) {
       return "☔️";
-    } else if (weatherDescription.includes("snow")) {
+    } else if (weatherDescription.includes("Snow")) {
       return "❄️";
-    } else if (weatherDescription.includes("sunny")) {
+    } else if (weatherDescription.includes("Sunny")) {
       return "☀️";
+    } else if (weatherDescription.includes("Mist")) {
+      return "🌫️";
     } else {
       return "☁️";
     }
