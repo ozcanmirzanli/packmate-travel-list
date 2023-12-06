@@ -7,9 +7,11 @@ export default function Form({ onAddItems }) {
   const [category, setCategory] = useState("Clothing");
 
   function handleSubmit(e) {
-    e.preventDefault();
+    e.preventDefault(); // Prevent the default form submission behavior
 
-    if (!description) return;
+    if (!description) return; // If the description is empty, do nothing
+
+    // Create a new item object with entered details
 
     const newItem = {
       description,
@@ -19,12 +21,16 @@ export default function Form({ onAddItems }) {
       category,
     };
 
-    onAddItems(newItem);
+    onAddItems(newItem); // Call the onAddItems function passed as a prop with the new item
 
+    // Clear the form fields after adding the item
     setDescription("");
     setQuantity(1);
-    setCategory("Clothing");
+    setCategory(category);
   }
+
+  // Render the form elements
+
   return (
     <form className="add-form" onSubmit={handleSubmit}>
       <h3>What do you need for your 🚞 trip?</h3>
