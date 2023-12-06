@@ -51,6 +51,7 @@ export default function PackingList({
           <option value="Clothing">Clothing</option>
           <option value="Toiletries">Toiletries</option>
           <option value="Electronics">Electronics</option>
+          <option value="Books">Books</option>
         </select>
       </div>
 
