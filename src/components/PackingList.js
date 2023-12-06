@@ -15,6 +15,7 @@ export default function PackingList({
   useEffect(() => {
     let filteredItems = items;
 
+    // Filter items based on the selected category
     if (selectedCategory !== "All") {
       filteredItems = items.filter(
         (item) => item.category === selectedCategory
@@ -23,6 +24,7 @@ export default function PackingList({
 
     let sortedItems = filteredItems.slice();
 
+    // Apply sorting based on the selected sort criteria
     if (sortBy === "description") {
       sortedItems.sort((a, b) => a.description.localeCompare(b.description));
     } else if (sortBy === "packed") {
@@ -31,6 +33,11 @@ export default function PackingList({
 
     setDisplayedItems(sortedItems);
   }, [items, sortBy, selectedCategory]);
+
+  // Log displayedItems for debugging purposes
+  useEffect(() => {
+    console.log("Displayed items:", displayedItems);
+  }, [displayedItems]);
 
   return (
     <div className="list">
@@ -53,7 +60,6 @@ export default function PackingList({
             item={item}
             onDeleteItem={onDeleteItem}
             onToggleItem={onToggleItem}
-            // @ts-ignore
             key={item.id}
           />
         ))}
