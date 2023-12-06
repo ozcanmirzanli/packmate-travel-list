@@ -65,7 +65,7 @@ function WeatherComponent() {
             Temperature:{" "}
             {
               // @ts-ignore
-              weather.main.temp
+              parseFloat(weather.main.temp)
             }
             °C
           </p>
