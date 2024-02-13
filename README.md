@@ -50,7 +50,7 @@ Contributions are welcome! If you have suggestions for improving this applicatio
 License
 This project is open-source and available under the MIT License.
 
-Enjoy planning and packing for your trips with the Packmate Trip Packing List App! 🚞✈️🚀
+Enjoy planning and packing for your trips with the Trip Packing List App! 🚞✈️🚀
 
 
 
